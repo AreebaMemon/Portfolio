@@ -1,0 +1,417 @@
+@media (max-width: 600px) {
+  #nav {
+      display: none;
+  }
+
+  .toggle-button {
+      margin-left: auto; 
+  }
+}
+
+@media (max-width: 1024px) {
+  #sect1 {
+      padding: 40px 60px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #s1c1 {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont{
+  flex-direction: column;
+}
+
+  .s1h2 {
+      font-size: 3em;
+  }
+
+  .s1p1 {
+      font-size: 1em;
+  }
+
+  .s1b1 {
+      width: 180px;
+      padding: 8px 16px;
+  }
+
+  #img1 {
+      max-height: 400px;
+  }
+}
+
+@media (max-width: 786px) {
+  #sect1 {
+      padding: 30px 40px;
+     
+  }
+
+  .s1h1 {
+      font-size: 1.8em;
+  }
+
+  .s1h2 {
+      font-size: 2.5em;
+  }
+
+  .s1h3 {
+      font-size: 1.2em;
+  }
+
+  .s1p1 {
+      font-size: 0.9em;
+  }
+
+  .s1b1 {
+      width: 160px;
+  }
+
+  #img1 {
+      max-height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  #sect1 {
+      padding: 20px;
+  }
+
+  .s1h2 {
+      font-size: 2.2em;
+  }
+
+  .s1h3 {
+      font-size: 1em;
+  }
+
+  .s1p1 {
+      font-size: 0.85em;
+  }
+
+  .s1b1 {
+      width: 140px;
+      font-size: 0.9em;
+  }
+
+  #img1 {
+      max-height: 250px;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 786px) {
+  #sec2 {
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px 20px;
+  }
+
+  .widget-item h2 {
+      font-size: 36px;
+  }
+
+  .widget-item p {
+      font-size: 16px;
+  }
+
+  .divider {
+      display: none; /* Hide the divider on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #sec2 {
+      padding: 20px;
+      gap: 15px;
+  }
+
+  .widget-item h2 {
+      font-size: 28px;
+  }
+
+  .widget-item p {
+      font-size: 14px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #sect3 {
+      padding: 30px 40px;
+      gap: 30px;
+  }
+
+  #img2 {
+      height: 220px;
+      width: 220px;
+  }
+
+  .s1h1 {
+      font-size: 1.3em;
+  }
+
+  .s1p1 {
+      font-size: 0.95em;
+  }
+}
+
+@media (max-width: 786px) {
+  #sect3 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+  }
+
+  #s3c1 {
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+
+  #img2 {
+      height: 200px;
+      width: 200px;
+  }
+
+  .s1h1 {
+      font-size: 1.2em;
+  }
+
+  .s1p1 {
+      font-size: 0.9em;
+  }
+
+  .s1b1 {
+      padding: 12px;
+      font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  #sect3 {
+      padding: 20px;
+      gap: 15px;
+  }
+
+  #img2 {
+      height: 180px;
+      width: 180px;
+  }
+
+  .s1h1 {
+      font-size: 1.1em;
+  }
+
+  .s1p1 {
+      font-size: 0.85em;
+  }
+
+  .s1b1 {
+      padding: 10px;
+      font-size: 0.9em;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .sect4 {
+      padding: 50px 15px;
+  }
+
+  .s4h1 {
+      font-size: 1.4em;
+  }
+
+  .s4h2 {
+      font-size: 2em;
+  }
+
+  .s4p {
+      font-size: 1.1em;
+      max-width: 700px;
+  }
+}
+
+@media (max-width: 786px) {
+  .sect4 {
+      padding: 40px 15px;
+  }
+
+  .s4h1 {
+      font-size: 1.3em;
+  }
+
+  .s4h2 {
+      font-size: 1.8em;
+  }
+
+  .s4p {
+      font-size: 1em;
+      max-width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sect4 {
+      padding: 30px 10px;
+  }
+
+  .s4h1 {
+      font-size: 1.2em;
+  }
+
+  .s4h2 {
+      font-size: 1.6em;
+  }
+
+  .s4p {
+      font-size: 0.95em;
+      max-width: 100%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .box {
+      width: 220px;
+      height: 160px;
+      padding: 40px;
+  }
+
+  .icons {
+      font-size: 2.2em;
+  }
+
+  .boxp {
+      font-size: 1.1em;
+  }
+}
+
+@media (max-width: 786px) {
+  #sect5 {
+      gap: 15px;
+  }
+
+  .box {
+      width: 200px;
+      height: 150px;
+      padding: 30px;
+  }
+
+  .icons {
+      font-size: 2em;
+  }
+
+  .boxp {
+      font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  #sect5 {
+      padding: 30px 10px;
+      gap: 10px;
+  }
+
+  .box {
+      width: 180px;
+      height: 130px;
+      padding: 20px;
+  }
+
+  .icons {
+      font-size: 1.8em;
+  }
+
+  .boxp {
+      font-size: 0.95em;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 786px) {
+  #sect6 {
+      flex-direction: column; /* Stack skills vertically on smaller screens */
+      align-items: center; /* Center the skill items */
+  }
+
+  .skills {
+      min-width: 100%; /* Ensure skill items take up full width */
+      text-align: center; /* Center text for mobile view */
+      line-height: 50px; /* Reduce line height for better fit */
+  }
+
+  .line {
+      height: 12px; /* Reduce line height for mobile */
+  }
+
+  span {
+      font-size: 18px; /* Reduce font size for smaller screens */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 786px) {
+  .sect7 {
+      flex-direction: column; /* Stack project boxes vertically on smaller screens */
+      align-items: center; /* Center align items */
+  }
+
+  .box1 {
+      width: 100%; /* Full width on small screens */
+      max-width: 400px; /* Add a max width to prevent excessive scaling */
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .images {
+      height: 180px; /* Reduce image height on smaller screens */
+  }
+
+  .s4p {
+      font-size: 0.9em; /* Slightly smaller text on mobile */
+  }
+
+  .s7b1 {
+      padding: 8px 12px; /* Adjust button padding for mobile */
+  }
+}
+
+@media (max-width: 786px) {
+  #sect8 {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      height: auto; /* Allow height to adjust */
+      align-items: center; /* Center align items */
+      padding: 20px; /* Add padding for better spacing */
+  }
+
+  #sect81 {
+      text-align: center; /* Center align text on small screens */
+      margin-bottom: 10px; /* Space below for better spacing */
+  }
+
+  .s8 {
+      width: 100%; /* Full width button on smaller screens */
+      padding: 12px; /* Adjust padding for mobile */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 786px) {
+  #sect91, #sect92 {
+      max-width: 100%; /* Stack elements vertically on smaller screens */
+      margin-bottom: 20px; /* Space below for better spacing */
+  }
+
+  #sect9 {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center; /* Center align items */
+  }
+}
+
+
+
+

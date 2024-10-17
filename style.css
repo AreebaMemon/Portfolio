@@ -1,0 +1,578 @@
+:root {
+  --primary-color: #ff7a57;
+  --text-color: #495057;
+  --white: #ffffff;
+  --border-color: #e1e1e1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  color: var(--text-color);
+  font-family: "Arial", sans-serif;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 0 10px 0 0;
+  font-size: 1.25em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#logo img {
+  width: 80px;
+}
+
+#nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#nav li {
+  margin-right: 0;
+}
+
+#nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#nav a#home,
+#nav a:hover {
+  color: var(--white);
+}
+
+/* Toggle button for dark/light theme */
+.toggle-button {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-circle {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #495057;
+  border-radius: 50%;
+  transition: left 0.3s ease;
+  left: 2px;
+}
+
+.toggle-button.active {
+  background-color: #495057;
+}
+
+.toggle-button.active .toggle-circle {
+  left: 52px;
+  background-color: white;
+}
+
+/* Section One (Hero Section) */
+#sect1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 120px;
+}
+
+#s1c1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.s1h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.s1h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+  margin: 0.2em 0;
+}
+
+.name {
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.s1h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0.2em 0;
+}
+
+.s1p1 {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.cont {
+  display: flex;
+  gap: 10px;
+}
+
+
+#s1c2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img1 {
+  max-height: 520px;
+  width: auto;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social {
+  font-size: 1.5em;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.social:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+#mainsection2 {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  padding: 40px 0;
+}
+
+#sec2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 750px;
+  width: 95%;
+  padding: 20px;
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  align-items: center;
+}
+
+.widget-item {
+  text-align: center;
+  flex: 1;
+}
+
+.widget-item h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.widget-item p {
+  font-size: 18px;
+}
+
+
+#sect3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+#s3c1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#img2 {
+  height: 256px;
+  width: 256px;
+  border: 1px solid #f5f5f5;
+  border-radius: 15px;
+}
+
+#s3c2 {
+  flex: 2;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.s1h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.s1p1 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+/* Reuse existing button styles */
+.s1b1 {
+  font-size: 1em;
+  padding: 15px 20px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ .sect4 {
+    text-align: center;
+    padding: 60px 20px; /* Add padding for spacing */
+    background-color: var(--background-light); /* Optional background for visual separation */
+    border-radius: 10px; /* Slight rounding of corners for aesthetic */
+}
+
+.s4h1 {
+    font-size: 1.5em; /* Adjust font size for consistency */
+    font-weight: 500;
+    color: var(--primary-color); /* Use primary color */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.s4h2 {
+    font-size: 2.3em; /* Keep this larger for emphasis */
+    font-weight: 700;
+    margin-bottom: 20px; /* Space below the subheading */
+}
+
+.s4p {
+    font-size: 1.2em;
+    font-weight: 500;
+    white-space: pre-wrap;
+    max-width: 800px; /* Max width for readability */
+    margin: 0 auto; /* Center align text block */
+    line-height: 1.5; /* Improve line spacing for readability */
+}
+
+#sect5 {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Use gap instead of margin-right */
+  padding: 50px 0;
+  flex-wrap: wrap; /* Ensure boxes wrap on smaller screens */
+}
+
+.box {
+  padding: 50px;
+  width: 250px;
+  height: 180px;
+  box-shadow: 0 0 30px rgba(84, 169, 254, 0.4);
+  border-radius: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transitions */
+}
+
+.icons {
+  color: var(--primary-color); /* Use variable for primary color */
+  margin-bottom: 18px;
+  font-size: 2.5em;
+}
+
+.boxp {
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+
+.box:hover {
+  background-color: var(--primary-color); /* Background color change on hover */
+}
+
+.box:hover .boxp, 
+.box:hover .icons {
+  color: white; /* Change text and icon color to white on hover */
+}
+
+#sect6 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 40px; /* Added top margin for spacing */
+  padding: 0 20px; /* Added padding for mobile screens */
+}
+
+.skills {
+  flex: 1; 
+  min-width: 250px; 
+  margin: 15px; 
+  line-height: 60px;
+  text-align: left; 
+}
+
+.line {
+  height: 15px;
+  border-radius: 5px;
+  background-color: #f0f0f0; /* Light background for line contrast */
+}
+
+span {
+  font-size: 20px;
+  font-weight: 500; /* Ensure color is consistent with theme */
+}
+
+/* Background gradient for skill proficiency */
+#line1 {
+  background: linear-gradient(90deg ,#00004f 80%,  #ff7a57 20%);
+}
+
+#line2 {
+  background: linear-gradient(90deg ,#00004f 40%,  #ff7a57 60%);
+}
+
+#line3 {
+  background: linear-gradient(90deg,  #00004f 60%, #ff7a57 40%);
+}
+
+#line4 {
+  background: linear-gradient(90deg, #00004f 70%, #ff7a57 30%);
+}
+
+.sect7 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 40px 0; /* Vertical spacing */
+  padding: 0 20px; /* Padding for responsiveness */
+}
+
+.box1 {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(84, 169, 254, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.images {
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.s4p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.s7b1 a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Make the link fill the button */
+}
+
+.s7b1 {
+  background-color: #ff7a57; /* Button background color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */ 
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.s7b1:hover {
+  background-color: #e6683c; /* Darken button on hover */
+}
+
+/* Hover effect for the project box */
+.box1:hover {
+  transform: translateY(-5px); /* Lift the box slightly on hover */
+  box-shadow: 0 0 40px rgba(84, 169, 254, 0.5); /* Increase shadow on hover */
+}
+
+#mainsect8 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#sect8 {
+  display: flex;
+  justify-content: space-between; /* Adjusted for better spacing */
+  align-items: center;
+  width: 80%;
+  max-width: 1200px; /* Added max-width for larger screens */
+  height: 100px;
+  background-color: #ff7a57;
+  border-radius: 10px;
+  padding: 0 20px; /* Added padding for better spacing */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#sect81 {
+  color: white;
+  flex-grow: 1; /* Allow this section to take up remaining space */
+  font-size: 20px;
+  text-shadow: 0.3px 0.3px 1px white;
+}
+
+#sect82 {
+  display: flex;
+  justify-content: flex-end; /* Ensures button is on the right */
+}
+
+.s8 {
+  background-color: white;
+  color: #ff7a57;
+  border: none; /* Remove border for a cleaner look */
+  padding: 10px 20px; /* Added padding for the button */
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; /* Transition for smooth effect */
+}
+
+
+
+#sect9 {
+  width: 100%;
+  max-width: 900px;
+  padding: 35px;
+  box-shadow: 0 0 30px rgba(84, 169, 254, 0.4);
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 10px; 
+}
+
+#sect91, #sect92 {
+  width: 100%;
+  max-width: 45%;
+  padding: 10px; 
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ff7a57; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+form input[type="submit"] {
+  background-color: #ff7a57;
+  color: white;
+  cursor: pointer;
+  border: none; /* Remove border for a cleaner look */
+  padding: 12px; /* Increased padding for better button size */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Button hover effect */
+form input[type="submit"]:hover {
+  background-color: #e6683c; /* Darken button on hover */
+  transform: translateY(-2px); /* Lift the button slightly on hover */
+}
+
+.con1 {
+  margin-bottom: 20px;
+  display: flex; 
+  align-items: center; 
+}
+
+.con1 i {
+  font-size: 1.5em; /* Increased icon size */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.cn21 h3 {
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #ff7a57;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+footer .social-icons a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s, transform 0.3s; 
+}
+
+
+
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+  height: 40px;
+}
+
+footer a:hover {
+  color: #e6683c;
+} 
