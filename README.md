@@ -19,7 +19,7 @@ This is my **personal portfolio website**, built using **HTML and CSS**. It show
 ```
 
 ## 📷 Preview  
-![Portfolio Screenshot](images/127.0.0.1_5500_MYSite_index.html.png)
+![Portfolio Screenshot](images/Preview.png)
 
 
 
