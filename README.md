@@ -22,13 +22,4 @@ This is my **personal portfolio website**, built using **HTML and CSS**. It show
 ![Portfolio Screenshot](images/127.0.0.1_5500_MYSite_index.html.png)
 
 
-## 📞 Contact  
-If you'd like to connect or collaborate, feel free to reach out!  
-
-🔗 **[LinkedIn](https://www.linkedin.com/in/areebamemon/)**  
-📝 **[Medium Blog](https://medium.com/@mareeba166/introduction-of-software-development-b0b028d22540)**  
-
----  
-
-**© 2025 Areeba Memon. All rights reserved.**  
 
