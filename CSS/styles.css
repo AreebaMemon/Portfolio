@@ -1,11 +1,16 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   text-align: center;
   font-family: "Merriweather", serif;
   color: #40514e;
 }
 
-.box {
+#top-container {
   position: relative;
   background-color: #e4f9f5;
   padding-top: 100px;
@@ -17,15 +22,9 @@ body {
     right: 300px;
 }
 
-.pro {
+#pro {
     text-decoration: underline;
   }
-
-.bottom-cloud {
-    position: absolute;
-    left: 100px;
-    bottom: 300px;
-}
 
   
 h1 {
@@ -36,7 +35,7 @@ h1 {
 }
 
 p {
-    line-height: 2;
+  line-height: 2;
 }
 
 h2 {
@@ -47,13 +46,13 @@ h2 {
   padding-bottom: 10px;
 }
 
-.middle-container {
+#middle-container {
     margin: 100px 0;
 }
 
 
 #intro {
-    width: 30%;
+    width: 40%;
     margin: auto;
     line-height: 2;
 }
@@ -64,7 +63,6 @@ hr {
   width: 4%;
   margin: 100px auto;
 }
-
 
 
 .skill-row {
@@ -78,26 +76,23 @@ h3 {
     font-family: "Montserrat", sans-serif;
 }
 
-.left {
-  width: 25%;
+#left {
   float: left;
-  margin-right: 30px;
+  margin-right:30px;
 }
 
-.right {
-  width: 25%;
+#right {
   float: right;
   margin-left: 30px;
 }
 
-
-.contact-message {
+#contact-message {
   width: 40%;
-  margin: 40px auto 60px;
+  margin:40px auto 60px;
 }
 
 
-.btn {
+#btn {
     background-color:#11cdd4;
     border-radius: 8px;
     font-family: "Montserrat", sans-serif;
@@ -107,29 +102,65 @@ h3 {
     text-decoration: none;
 }
 
-.btn:hover {
+#btn:hover {
   background: #30e3cb;
 }
 
 
-.bottom-container {
+#bottom-container {
   background-color: #66bfbf;
   padding: 50px 0 20px;
 }
 
-a {
+.footer-link{
   color: #11999e;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   margin: 10px 20px;
 }
 
-a:hover {
+.footer-link:hover {
   color: #eaf6f6;
 }
 
-.copyright {
+#copyright {
   color: #eaf6f6;
   font-size: 0.75rem;
   padding: 20px 10px;
 }
+
+
+
+@media screen and (max-width:800px){
+  .treeImage{
+    width: 100%;
+  }
+
+  h1 {
+    font-size:4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  
+  #intro ,#contact-message,.skill-row{
+    width: 80%;
+ } 
+}
+
+@media screen and (max-width:500px){
+  .top-cloud , .bottom-cloud  {
+   display: none;  
+  } 
+
+  .skill-row {
+    text-align: center;
+  }
+
+   #left,#right{
+    float: none;
+    margin: 0;
+   }
+
+}
+ 
